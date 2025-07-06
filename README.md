@@ -2,7 +2,7 @@
 
 A full-stack Java-based UPI (Unified Payments Interface) payment system built with **Spring Boot**, **MySQL**, and a responsive **HTML/CSS/JS frontend**. It simulates key UPI features like user registration, account linking, money transfer, balance check, and transaction history.
 
----
+
 
 ## 🔧 Tech Stack
 
@@ -11,7 +11,7 @@ A full-stack Java-based UPI (Unified Payments Interface) payment system built wi
 - **Database:** MySQL
 - **Build Tool:** Maven
 
----
+
 
 ## 🚀 Features
 
@@ -22,7 +22,7 @@ A full-stack Java-based UPI (Unified Payments Interface) payment system built wi
 - 🎨 Stylish, mobile-responsive frontend
 - ⚠️ Error handling and user feedback with alerts
 
----
+
 
 ## 📂 Project Structure
 
@@ -40,18 +40,15 @@ upi-payment-system/
 └── README.md
 
 
----
 
 ## 🔗 How to Run
 
 1. ✅ Clone this repo:
-   ```bash
+
    git clone https://github.com/yennameedhimanojkumar/upi-payment-system.git
-   cd upi-payment-system
+
 
 📸 Screenshots
-Add screenshots of your UI pages here for better visual understanding.
-Example:
 
 ![alt text](image.png)
 ![alt text](image-1.png)
