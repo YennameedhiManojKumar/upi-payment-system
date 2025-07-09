@@ -1,0 +1,52 @@
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+**/logs/
+*.log
+*.jar
+*.war
+*.ear
+
+# IDEs and editors
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+*.class
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Build files
+/build/
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+/nbproject/private/
+/build/
+/dist/
+
+# IntelliJ
+*.iws
+*.iml
+*.ipr
+.idea/
+
+# Windows
+*.bat
+
+# Mac
+*.DS_Store
+
+# Linux
+*~
