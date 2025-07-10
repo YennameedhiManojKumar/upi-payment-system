@@ -1,65 +1,79 @@
-# 💸 UPI Payment System
+# UPI Payment System - Backend
 
-A full-stack Java-based UPI (Unified Payments Interface) payment system built with **Spring Boot**, **MySQL**, and a responsive **HTML/CSS/JS frontend**. It simulates key UPI features like user registration, account linking, money transfer, balance check, and transaction history.
+## 🔐 Project Overview
 
+This is a backend application that simulates the core functionalities of a UPI (Unified Payments Interface) payment system, built using Java and Spring Boot. The project enables users to register, login, check balances, transfer money, and view transaction history.
 
+---
 
-## 🔧 Tech Stack
+## 🧠 Features
 
-- **Backend:** Java, Spring Boot, Spring Data JPA
-- **Frontend:** HTML, CSS, JavaScript
-- **Database:** MySQL
-- **Build Tool:** Maven
+* ✅ User Registration with UPI ID and bank linking
+* ✅ Secure Login using UPI ID and PIN
+* ✅ Check current account balance
+* ✅ Transfer money between users
+* ✅ View all transactions (sent/received)
 
+---
 
+## 🛠️ Technologies Used
 
-## 🚀 Features
+| Technology      | Purpose                             |
+|-----------------|--------------------------------------|
+| Java 17         | Primary backend language             |
+| Spring Boot     | Backend framework                    |
+| Spring Data JPA | ORM and database interaction         |
+| MySQL           | Relational database                  |
+| Maven           | Project management and build tool    |
+| Lombok          | Model boilerplate reduction          |
+| Postman         | API testing                          |
+| HTML/CSS/JS     | Static frontend                      |
+| Favicon         | Custom browser icon                  |
 
-- ✅ Register User & Link UPI Account (combined flow)
-- 💸 Transfer money using UPI ID
-- 📄 View transaction history
-- 💰 Check account balance
-- 🎨 Stylish, mobile-responsive frontend
-- ⚠️ Error handling and user feedback with alerts
+---
 
+## 📁 Folder Structure
 
+```
+backend/
+├── controller/          # REST endpoints (/register, /send, etc.)
+├── dto/                 # Data Transfer Objects (e.g., LoginDTO)
+├── model/               # JPA Entities (User, BankAccount, Transaction)
+├── repository/          # Spring Data JPA interfaces
+├── service/             # Core business logic
+├── exception/           # (Optional) Custom exception handling
+└── UpiPaymentSystemApplication.java  # Main Spring Boot app
+```
 
-## 📂 Project Structure
+---
 
-upi-payment-system/
-├── payment/ # Spring Boot Backend
-│ ├── src/main/java/... # Java source files
-│ └── resources/ # Static files & config
-│ └── static/
-│ ├── register.html
-│ ├── transfer.html
-│ ├── balance.html
-│ ├── history.html
-│ └── css/
-│ └── style.css
-└── README.md
+## 🔄 API Endpoints
 
+| Method | Endpoint                | Description                     |
+| ------ | ----------------------- | ------------------------------- |
+| POST   | `/register`             | Register user and create UPI ID |
+| POST   | `/login`                | Login using UPI ID and PIN      |
+| POST   | `/send`                 | Send money to another UPI user  |
+| GET    | `/balance/{upiId}`      | Get current balance by UPI ID   |
+| GET    | `/transactions/{upiId}` | Get all transactions for a user |
 
+---
 
-## 🔗 How to Run
+## 🧠 Future Improvements
 
-1. ✅ Clone this repo:
+* Add JWT-based authentication
+* Add email/SMS confirmation
+* Role-based access (admin, user)
+* Integrate React or modern UI frontend
+* Add Swagger API documentation
 
-   git clone https://github.com/yennameedhimanojkumar/upi-payment-system.git
+---
 
+## 👨‍💻 Author
 
-📸 Screenshots
+**Y Manoj Kumar**
+[LinkedIn](https://www.linkedin.com/in/manojkumaryennameedhi) | [GitHub](https://github.com/YennameedhiManojKumar)
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+---
 
-
-📜 License
-This project is open-source and free to use for educational purposes.
-
-🙋‍♂️ Author
-Manoj Kumar Yennameedhi
-
-🌐 GitHub: yennameedhimanojkumar
+> 🚀 A backend project built with real-world fintech logic. Production-scalable.
