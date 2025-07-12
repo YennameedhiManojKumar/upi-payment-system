@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | UPI Payment System</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <div class="login-container">
+    <nav class="nav">
+      <a href="index.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="balance.html">Balance</a>
+      <a href="transfer.html">Transfer</a>
+      <a href="history.html">History</a>
+    </nav>
+
+    <div class="card">
+      <h1>📝 Register</h1>
+      <form id="registerForm" method="post" onsubmit="return false;">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="text" id="phone" placeholder="Phone Number" required />
+        <select id="bank" required>
+          <option value="">Select Bank</option>
+          <option value="SBI">State Bank of India (SBI)</option>
+          <option value="HDFC">HDFC Bank</option>
+          <option value="ICICI">ICICI Bank</option>
+          <option value="Axis">Axis Bank</option>
+        </select>
+        <input type="text" id="upiId" placeholder="Choose your UPI ID" required />
+        <input type="password" id="pin" placeholder="Create UPI PIN" required />
+        <button type="submit">Register & Link Bank</button>
+      </form>
+      <p>Already have an account? <a href="index.html">Login here</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

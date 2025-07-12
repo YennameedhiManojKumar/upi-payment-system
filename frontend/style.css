@@ -1,0 +1,143 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f0f4ff, #d9e4ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container for all pages */
+.login-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Card layout */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+/* Heading */
+.card h1 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+/* Form fields */
+.card form input,
+.card form select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.card button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #3730a3;
+}
+
+/* Navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.nav a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #4338ca;
+}
+
+/* Paragraph text */
+.card p {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Transaction history formatting */
+#transactionHistory p {
+  margin: 8px 0;
+  padding: 8px;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Fixed top navbar */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4f46e5;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #4f46e5;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  background-color: #4338ca;
+}
+
+/* Add padding to body so content doesn't get hidden behind navbar */
+body {
+  padding-top: 70px; /* match nav height */
+}

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/user")
+@CrossOrigin(origins = "*") // Allow CORS for frontend (optional but useful)
 public class UserController {
 
     @Autowired
@@ -19,23 +20,26 @@ public class UserController {
     @Autowired
     private AccountService accountService;
 
-    // Existing endpoint
+    // ✅ Endpoint to link account separately (optional)
     @PostMapping("/link-account")
     public Account linkAccount(@RequestParam Long userId,
-            @RequestParam String upiId,
-            @RequestParam double balance) {
+                                @RequestParam String upiId,
+                                @RequestParam double balance) {
         return userService.linkAccount(userId, upiId, balance);
     }
 
-    // New combined register + link endpoint
+    // ✅ Register user + link bank account
     @PostMapping("/registerAndLink")
     public ResponseEntity<?> registerAndLink(@RequestBody RegisterLinkRequest request) {
+        // Create User
         User user = new User();
         user.setName(request.getName());
-        user.setMobileNumber(request.getMobileNumber());
+        user.setMobileNumber(request.getPhone()); // ✅ Matches frontend field
         user = userService.registerUser(user);
 
-        accountService.linkAccount(user.getId(), request.getUpiId(), request.getBalance());
+        // Link Account (initial balance hardcoded to 1000.0 or set from frontend)
+        accountService.linkAccount(user.getId(), request.getUpiId(), 1000.0);
+
         return ResponseEntity.ok(user);
     }
 }

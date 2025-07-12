@@ -1,15 +1,16 @@
 package com.upi.payment.dto;
 
 public class RegisterLinkRequest {
-
     private String name;
-    private String mobileNumber;
+    private String phone; // 🔄 Renamed to match frontend
+    private String bank;
     private String upiId;
-    private double balance;
+    private String pin;
 
     public RegisterLinkRequest() {
     }
 
+    // Getters & Setters
     public String getName() {
         return name;
     }
@@ -18,12 +19,20 @@ public class RegisterLinkRequest {
         this.name = name;
     }
 
-    public String getMobileNumber() {
-        return mobileNumber;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setMobileNumber(String mobileNumber) {
-        this.mobileNumber = mobileNumber;
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getBank() {
+        return bank;
+    }
+
+    public void setBank(String bank) {
+        this.bank = bank;
     }
 
     public String getUpiId() {
@@ -34,11 +43,11 @@ public class RegisterLinkRequest {
         this.upiId = upiId;
     }
 
-    public double getBalance() {
-        return balance;
+    public String getPin() {
+        return pin;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public void setPin(String pin) {
+        this.pin = pin;
     }
 }
