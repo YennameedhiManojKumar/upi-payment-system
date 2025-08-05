@@ -52,10 +52,10 @@ http://localhost:8080/register.html
 
 ## 📸 Screenshots
 
-|<img src="PAYPORT/register.png" alt="registerpage" width="500"/>
-|<img src="PAYPORT/transfer.png" alt="transferpage" width="500"/>
-|<img src="PAYPORT/balance.png" alt="balancepage" width="500"/>
-|<img src="PAYPORT/history.png" alt="historypage" width="500"/>
+(register.png) 
+(preview.png) 
+(preview.png) 
+(preview.png) 
 
 ---
 
