@@ -52,10 +52,10 @@ http://localhost:8080/register.html
 
 ## 📸 Screenshots
 
-(register.png) 
-(preview.png) 
-(preview.png) 
-(preview.png) 
+![payport UI Preview](register.png) 
+![payport UI Preview](transfer.png) 
+![payport UI Preview](balance.png)
+![payport UI Preview](history.png) 
 
 ---
 
